@@ -1,8 +1,8 @@
 <div *ngIf="!name" >
   <p>Please enter your name to begin:</p>
   <form [formGroup]="form">
-
-    <input type ="text" formControlName = "nameControl"><button class="button" (click)="onSubmit()">Submit</button>
+    <input type ="text" formControlName = "nameControl">
+    <button class="button" (click)="onSubmit()">Submit</button>
   </form>
 </div>
 
@@ -12,7 +12,7 @@
   </h3>
 
   <p>Today we are going to follow Angular's Official tutorial program called "Tour of Heroes". 
-    This program dives into the basics of how to create a functioning angular project.
+    This program dives into the basics of how to create a functioning Angular project.
   </p>
   <br>
   <p>To begin, follow the directions provided in the links below. 
@@ -25,7 +25,6 @@
     <li><a href="https://angular.io/tutorial/toh-pt5" target="_blank">Tour Of Heroes: Routing</a></li>
     <li><a href="https://angular.io/tutorial/toh-pt5" target="_blank">Tour Of Heroes: HTTP</a></li>  
   </ol>
-  <p>Hey {{name}}, if you are looking for more angular resources,  
-    click <a href="https://angular.io/resources" target="_blank">here</a>.</p>
-
+  <p>Hey {{name}}, if you are looking for more Angular resources, click <a href="https://angular.io/resources" target="_blank">here</a>.</p>
+  <p>If you have any questions or would like to talk shop about Javascript, visit my website at codebyalex.com <a href="http://codebyalex.com" target="_blank">codebyalex.com</a>.</p>
 </ng-container>
