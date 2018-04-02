@@ -1,0 +1,31 @@
+<div *ngIf="!name" >
+  <p>Please enter your name to begin:</p>
+  <form [formGroup]="form">
+
+    <input type ="text" formControlName = "nameControl"><button class="button" (click)="onSubmit()">Submit</button>
+  </form>
+</div>
+
+<ng-container *ngIf="name">
+  <h3>
+    Hello {{name}}! Welcome to the workshop.
+  </h3>
+
+  <p>Today we are going to follow Angular's Official tutorial program called "Tour of Heroes". 
+    This program dives into the basics of how to create a functioning angular project.
+  </p>
+  <br>
+  <p>To begin, follow the directions provided in the links below. 
+    I have already created your project. Now you get to work on the interesting stuff:</p>
+  <ol>
+    <li><a href="https://angular.io/tutorial/toh-pt1" target="_blank">Tour Of Heroes: The Hero Editor </a></li>
+    <li><a href="https://angular.io/tutorial/toh-pt2" target="_blank">Tour Of Heroes: Displaying a list</a></li>
+    <li><a href="https://angular.io/tutorial/toh-pt3" target="_blank">Tour Of Heroes: Master/detail Components</a></li>
+    <li><a href="https://angular.io/tutorial/toh-pt4" target="_blank">Tour Of Heroes: Services</a></li>
+    <li><a href="https://angular.io/tutorial/toh-pt5" target="_blank">Tour Of Heroes: Routing</a></li>
+    <li><a href="https://angular.io/tutorial/toh-pt5" target="_blank">Tour Of Heroes: HTTP</a></li>  
+  </ol>
+  <p>Hey {{name}}, if you are looking for more angular resources,  
+    click <a href="https://angular.io/resources" target="_blank">here</a>.</p>
+
+</ng-container>
