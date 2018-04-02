@@ -1,5 +1,5 @@
 # HelloCloud
-Workshop that includes an angular project and all config files needed to push to travis and aws
+Workshop that includes an angular project set up for the "Tour of Heroes" tutorial.
 
 ## Prerequisites
 
