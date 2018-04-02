@@ -9,6 +9,8 @@ Install the angular CLI
 ```bash
 npm install -g @angular/cli
 ```
+## How to run
+
 To build and start application run:
 ```bash
 ng serve
